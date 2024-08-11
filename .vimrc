@@ -1,8 +1,32 @@
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
+colorscheme elflord
+
 set number 
 set tabstop=2 
 set shiftwidth=2 
 set expandtab
+set hidden
 
+" Forget being compatible with good ol' vi
+set nocompatible
+
+" Get that filetype stuff happening
+filetype on
+filetype plugin on
+filetype indent on
+
+" Turn on that syntax highlighting
+syntax on
+
+" Let's make it easy to edit this file (mnemonic for the key sequence is
+" 'e'dit 'v'imrc)
+nmap <silent> ,ev :e $MYVIMRC<cr>
+
+" And to source this file as well (mnemonic for the key sequence is
+" 's'ource 'v'imrc)
+nmap <silent> ,sv :so $MYVIMRC<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set splitbelow splitright             " when splitting, force new location
