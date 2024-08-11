@@ -3,7 +3,7 @@
 [core]
 	editor = vim
 [credential]
-	helper = store
+	#helper = store
 [alias]
 [alias]
 	
@@ -14,3 +14,5 @@
 
 [push]
 	default = simple
+[merge]
+	default = ff
